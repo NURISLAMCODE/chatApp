@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:fontFamily="@font/vespertine"
+            android:textSize="@dimen/_25sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:textColor="@color/sky"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="100dp"
+            android:src="@drawable/profile"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+        <EditText
+            android:id="@+id/reg_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_shape"
+            android:hint="Name"
+            android:textSize="@dimen/_20sdp"
+            android:layout_margin="@dimen/_15sdp"
+            />
+        <EditText
+            android:id="@+id/reg_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_shape"
+            android:hint="Email Address"
+            android:textSize="@dimen/_20sdp"
+            android:layout_margin="@dimen/_15sdp"
+            />
+        <EditText
+            android:id="@+id/reg_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_shape"
+            android:hint="Password"
+            android:textSize="@dimen/_20sdp"
+            android:layout_margin="@dimen/_15sdp"
+            />
+        <EditText
+            android:id="@+id/reg_con_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_shape"
+            android:hint="Confirm Password"
+            android:textSize="@dimen/_20sdp"
+            android:layout_margin="@dimen/_15sdp"
+            />
+        <TextView
+            android:id="@+id/reg_btn_singUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shape"
+            android:text="SignUp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:textSize="@dimen/_20sdp"
+            android:layout_margin="@dimen/_15sdp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="7"
+        android:layout_marginBottom="@dimen/_30sdp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already Account?"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:layout_weight="2"
+            android:gravity="right"
+            />
+        <TextView
+            android:id="@+id/sing_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/purple_500"
+            android:layout_weight="3"
+
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
